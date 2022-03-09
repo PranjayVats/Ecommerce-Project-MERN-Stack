@@ -30,7 +30,7 @@ app.listen(process.env.PORT, () => {
 //Unandled Promise Rejection
 process.on("unhandledRejection", (err) => {
   console.log(`Error: ${err.message}`);
-  console.log("Shutting down server due to Unandled Promise Rejection");
+  console.log("Shutting down server due to Unhandled Promise Rejection");
   server.close(() => {
     process.exit(1);
   });
