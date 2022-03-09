@@ -6,7 +6,6 @@ const connectDatabase = () => {
   mongoose
     .connect(process.env.DB_URI, {
       useNewUrlParser: true,
-      useFindAndModify: false,
       useUnifiedTopology: true,
       useCreateIndex: true,
       //this does not work in latest mongoose setup
