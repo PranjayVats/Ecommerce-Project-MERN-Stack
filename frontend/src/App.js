@@ -95,7 +95,6 @@ function App() {
         <ProtectedRoute exact path="/success" component={OrderSuccess} />
         <ProtectedRoute exact path="/orders" component={MyOrders} />
         <ProtectedRoute exact path="/order/:id" component={OrderDetails} />
-
         <ProtectedRoute
           isAdmin={true}
           exact
