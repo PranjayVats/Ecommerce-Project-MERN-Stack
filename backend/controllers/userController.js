@@ -88,7 +88,7 @@ exports.forgotPassword = catchAsyncErrors(async (req, res, next) => {
   const resetToken = user.getResetPasswordToken();
   await user.save({ validateBeforeSave: false });
 
-  const resetPasswordUrl = `${req.protocol}://${req.get("host")}/password/reset/${resetToken}`;
+  const resetPasswordUrl = `https://mern-stack-ecommerce-webapp.herokuapp.com//password/reset/${resetToken}`;
 
   const message = `Your password reset token is:- \n\n${resetPasswordUrl} \n\nIf you have not requested this email, then please ignore it.`;
   try {
