@@ -89,7 +89,7 @@ function App() {
         <Route exact path="/password/forgot" component={ForgotPassword} />
         <Route exact path="/password/reset/:token" component={ResetPassword} />
         <Route exact path="/login" component={LoginSignUp} />
-        <ProtectedRoute exact path="/cart" component={Cart} isAdmin={true} />
+        <ProtectedRoute exact path="/cart" component={Cart} />
         <ProtectedRoute exact path="/shipping" component={Shipping} />
         <ProtectedRoute exact path="/order/confirm" component={ConfirmOrder} />
         <ProtectedRoute exact path="/success" component={OrderSuccess} />
