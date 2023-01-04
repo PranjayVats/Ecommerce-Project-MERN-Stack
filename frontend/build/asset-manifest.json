@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ace144d9.chunk.css",
+    "main.js": "/static/js/main.d422be76.chunk.js",
+    "main.js.map": "/static/js/main.d422be76.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.18f5838c.js",
+    "runtime-main.js.map": "/static/js/runtime-main.18f5838c.js.map",
+    "static/css/2.9af896a7.chunk.css": "/static/css/2.9af896a7.chunk.css",
+    "static/js/2.9c3324fb.chunk.js": "/static/js/2.9c3324fb.chunk.js",
+    "static/js/2.9c3324fb.chunk.js.map": "/static/js/2.9c3324fb.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.9af896a7.chunk.css.map": "/static/css/2.9af896a7.chunk.css.map",
+    "static/css/main.ace144d9.chunk.css.map": "/static/css/main.ace144d9.chunk.css.map",
+    "static/js/2.9c3324fb.chunk.js.LICENSE.txt": "/static/js/2.9c3324fb.chunk.js.LICENSE.txt",
+    "static/media/appstore.d0c58399.png": "/static/media/appstore.d0c58399.png",
+    "static/media/Home.css": "/static/media/cover.e2edeab1.jfif",
+    "static/media/e_logo.1d834dec.png": "/static/media/e_logo.1d834dec.png",
+    "static/media/playstore.82b48319.png": "/static/media/playstore.82b48319.png",
+    "static/media/profile.697fdcd2.png": "/static/media/profile.697fdcd2.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.18f5838c.js",
+    "static/css/2.9af896a7.chunk.css",
+    "static/js/2.9c3324fb.chunk.js",
+    "static/css/main.ace144d9.chunk.css",
+    "static/js/main.d422be76.chunk.js"
+  ]
+}
