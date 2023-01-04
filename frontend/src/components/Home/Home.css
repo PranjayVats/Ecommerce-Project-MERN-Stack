@@ -1,0 +1,119 @@
+.banner {
+  background-image: url("../../images/cover.jfif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vmin;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.banner > h1 {
+  margin: 6vmax;
+  font: 600 2.5vmax "Lobster";
+}
+.banner > p {
+  font: 300 1.5vmax "Roboto";
+}
+.banner > a > button {
+  margin-bottom: 3vmax;
+  /* cursor: pointer; */
+  background-color: rgba(15, 15, 15, 0.26);
+  border: 1px solid white;
+  border-radius: 30%;
+  font-weight: 400;
+  color: white;
+  transition: all 0.5s;
+  padding: 0.7vmax;
+  height: 4vmax;
+  width: 4vmax;
+  font: 400 1vmax "Roboto";
+}
+.banner > a > button:hover {
+  background-color: rgba(105, 105, 105, 0.26);
+  color: white;
+}
+.banner::after {
+  content: "";
+  width: 100vw;
+  height: 100vmin;
+  background-color: white;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  max-width: 100%;
+  clip-path: polygon(100% 54%, 0% 100%, 100% 100%);
+}
+.homeHeading {
+  text-align: center;
+  font-family: "Roboto";
+  border-bottom: 1px solid black;
+  font-size: 2vmax;
+  width: 20vmax;
+  padding: 1vmax;
+  margin: 5vmax auto;
+}
+.container {
+  display: flex;
+  margin: 2vmax auto;
+  width: 80vw;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.productCard {
+  width: 15vmax;
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  transition: all 0.5s;
+  text-decoration: none;
+  color: rgba(48, 48, 48);
+  margin: 3vmax 2vmax;
+  padding-bottom: 0.5vmax;
+}
+.productCard > img {
+  width: 15vmax;
+}
+.productCard > div {
+  margin: 0.5vmax;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.productCardSpan {
+  margin: 0.5vmax;
+  font: 300 0.9vmax "Roboto";
+}
+.productCard > p {
+  margin: 1vmax 0.5vmax;
+  font-size: 1.2vmax;
+  margin-bottom: 0px;
+}
+.productCard > span {
+  margin: 0.5vmax;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1vmax;
+}
+.productCard:hover {
+  box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+  transform: translateY(-1vmax);
+}
+@media screen and (max-width: 600px) {
+  .productCard > div {
+    margin: 0vmax;
+    display: block;
+  }
+  .productCardSpan {
+    margin: 0 0.5vmax;
+    font: 300 1vmax "Roboto";
+  }
+  .productCard > p {
+    font-size: 1.7vmax;
+  }
+  .productCard > span {
+    font-size: 1.5vmax;
+  }
+}

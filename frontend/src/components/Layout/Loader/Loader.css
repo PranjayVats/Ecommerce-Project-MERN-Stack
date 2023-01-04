@@ -1,0 +1,27 @@
+.loading{
+width: 100vw;
+height: 100vh;
+background-color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+max-width: 100%;
+
+}
+.loading>p{
+    position: absolute;
+}
+ .loading>div{
+     width: 10vmax;
+     height: 10vmax;place-items: center;
+     text-align: center;
+     border-bottom:5px solid tomato;
+     border-radius: 50%;
+     animation: loadingRotate 900ms linear infinite;
+ }
+
+ @keyframes loadingRotate {
+     to{
+         transform: rotateZ(360deg);
+     }
+ }
