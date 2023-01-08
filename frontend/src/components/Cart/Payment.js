@@ -56,7 +56,7 @@ function Payment({ history }) {
       };
 
       const { data } = await axios.post(
-        "api/v1/payment/process",
+        "/api/v1/payment/process",
         paymentData,
         config
       );
