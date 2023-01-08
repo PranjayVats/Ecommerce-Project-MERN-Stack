@@ -54,13 +54,14 @@ function Payment({ history }) {
           "Content-Type": "application/json",
         },
       };
+
       const { data } = await axios.post(
-        "/api/v1/payment/process",
+        "api/v1/payment/process",
         paymentData,
         config
       );
+      console.log(data.client_secret);
       const client_secret = data.client_secret;
-
       if (!stripe || !elements) return;
 
       const result = await stripe.confirmCardPayment(client_secret, {
