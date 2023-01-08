@@ -21,7 +21,7 @@ function ConfirmOrder({ history }) {
   const proceedToPayment = async () => {
     const data = { subtotal, shippingCharges, tax, totalPrice };
     sessionStorage.setItem("orderInfo", JSON.stringify(data));
-    history.push("/process/payment");
+    history.push("/payment/process");
   };
 
   return (
