@@ -10,6 +10,7 @@ exports.processPayment = catchAsyncErorrs(async (req, res, next) => {
     metadata: {
       company: "Ecommerce",
     },
+    payment_method_types: ['card']
   });
   console.log(myPayment.client_secret);
   res
