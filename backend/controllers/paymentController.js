@@ -4,6 +4,7 @@ const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 
 exports.processPayment = catchAsyncErorrs(async (req, res, next) => {
   console.log(req.body.amount);
+  // console.log(myPayment.client_secret);
   const myPayment = await stripe.paymentIntents.create({
     amount: req.body.amount,
     currency: "inr",
@@ -12,7 +13,6 @@ exports.processPayment = catchAsyncErorrs(async (req, res, next) => {
     },
     payment_method_types: ['card']
   });
-  console.log(myPayment.client_secret);
   res
     .status(200)
     .json({ success: true, client_secret: myPayment.client_secret });
