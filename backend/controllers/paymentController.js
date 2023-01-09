@@ -11,6 +11,7 @@ exports.processPayment = catchAsyncErorrs(async (req, res, next) => {
       company: "Ecommerce",
     },
   });
+  console.log(myPayment.client_secret);
   res
     .status(200)
     .json({ success: true, client_secret: myPayment.client_secret });
